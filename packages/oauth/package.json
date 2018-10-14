@@ -1,0 +1,17 @@
+{
+  "name": "oauth",
+  "version": "1.0.0",
+  "main": "src/koa.mjs",
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "tap": "^12.0.1"
+  },
+  "scripts": {
+    "start": "nodemon --experimental-modules src/koa.mjs",
+    "test": "tap --node-arg='--experimental-modules' test/*.mjs"
+  },
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1"
+  }
+}
